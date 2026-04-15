@@ -4,13 +4,11 @@ from dotenv import load_dotenv
 import os
 import uuid
 from datetime import datetime
-from flasgger import Swagger
 
 
 load_dotenv()
 
 app = Flask(__name__)
-swagger = Swagger(app)
 
 
 COSMOS_CONN_STRING = os.environ.get("COSMOS_CONNECTION_STRING")
